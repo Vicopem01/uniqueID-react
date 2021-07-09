@@ -1,0 +1,123 @@
+.mainBox{
+    width: 90%;
+    margin: auto auto 167px auto;
+    display: flex;
+    padding-top: 90px;
+    gap: 20px;
+}
+.mainBox aside{
+    flex-basis: 20%;
+}
+.mainBox aside h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    padding: 10px 20px; 
+    border-bottom: 1px solid #000000;
+    margin-bottom: 24px;
+    width: 222px;
+    margin-left: 10px;
+}
+.mainBox ul{
+    list-style: none;
+}
+.mainBox aside li:nth-of-type(1){
+    color: #fff;
+    background: #301446;
+    border-radius: 5px;
+}
+.mainBox ul li{
+    margin-bottom: 10px;
+}
+.profileLink{
+    font-weight: 600;
+    font-size: 18px;
+    color: #301446;
+    padding: 10px 20px; 
+}
+.profileDiv{
+    width: 70%;
+    background: #fff;
+    border: 1px solid #9E9E9E;
+}
+.profileDiv h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #301446;
+    padding: 30px;
+    border-bottom:  1px solid #C4C4C4;
+}
+.profileDiv label{
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    padding: 20px;
+    color: #000000;
+    margin-left: 15px;
+}
+.inputField{
+    width: 80%;
+    margin-left: 35px;
+    padding: 20px;
+    margin-bottom: 18px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+}
+.select{
+    width: 80%;
+    margin-left: 35px;
+    padding: 20px;
+    margin-bottom: 18px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    background: linear-gradient(90deg, #fff 96%, #C4C4C4 0%);
+}
+.socialLinks{
+    margin-left: 35px;
+    margin-bottom: 18px;
+    width: 80%;
+    display: flex;
+}
+.socialLinks span{
+    /* width: 40%; */
+    padding: 20px;
+    background: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px 0px 0px 5px;
+}
+.socialLinks input{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.profileDiv form p{
+    font-size: 11.5px;
+    color: #333333;
+    margin-left: 36px;
+    margin-bottom: 28px;
+    margin-top: -11px;
+}
+.profileDiv form button{
+    font-size: 16px;
+    color: #FFFCFC;
+    background: #301446;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 15px 60px;
+    border-radius: 5px;
+    margin-left: 35px;
+    margin-bottom: 46px;
+    border: none;
+
+}
+.profileDiv form button:hover{
+    opacity: 0.8;
+}

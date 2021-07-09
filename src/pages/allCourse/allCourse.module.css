@@ -1,0 +1,119 @@
+.header{
+    background-image: url("../allCourse/images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titleFit{
+    width: 90%;
+    margin: auto;
+}
+.header h1{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+    padding-top: 79px;
+    padding-bottom: 21px;
+}
+.header p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-bottom: 55px;
+}
+.a{
+    width: 205px;
+    background: #301446;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 100px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.a:hover,
+.a:active {
+  opacity: 0.8;
+}
+.courses{
+    background: #F2F2FB;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.aside{
+    padding-top: 108px;
+    width: 90%;
+    flex-basis: 25%;
+    /* height: 100vh; */
+    /* overflow-y: scroll; */
+}
+.aside ul{
+    list-style: none;
+}
+.aside p{
+    font-weight: 600;
+    font-size: 24px;
+    color: #301446;
+    padding-top: 60px;
+}
+.aside li{
+    margin: 38px 0;
+}
+.aside li:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+.aside span{
+    margin: 12px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 40px;
+    margin-bottom: 120px;
+    position: relative;
+}
+.cardContainer input{
+    width: 263px;
+    padding: 13px;
+    border: 1px solid #3B1548;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: 86px;
+    display: block;
+    padding-left: 42px;
+}
+.search{
+    position: relative;
+}
+.search img{
+    position: absolute;
+    right: 318px;
+    bottom: 13px;
+}
+.twoCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.prev{
+    position: absolute;
+    bottom: -60px;
+    left: 25px;
+}
+.next{
+    position: absolute;
+    bottom: -60px;
+    right: 25px;
+}

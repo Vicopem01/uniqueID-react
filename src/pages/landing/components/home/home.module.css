@@ -1,0 +1,68 @@
+.home{
+    background-image: url("../../images/background-rectangle.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}    
+.flex{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.left{
+    flex-basis: 40%;
+}
+.right{
+    flex-grow: 0.3;
+}
+h1{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 60px;
+}
+.p{
+    padding-top: 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.right img{
+    width:110%;
+}
+.input{
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.input::placeholder{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.input:focus{
+    outline:none;
+}
+.inputContainer{
+    position: relative;
+}
+.inputContainer img{
+    position: absolute;
+    right: 150px;
+    top: 43px;
+}

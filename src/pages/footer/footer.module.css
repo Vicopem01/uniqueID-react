@@ -1,0 +1,120 @@
+.div{
+    background-color: #301446;
+}
+.div a:hover,
+.div a:active {
+  opacity: 0.7;
+}
+.flexbox{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 100px;
+}
+.left{
+    flex-basis: 40%;
+}
+.logo{
+    padding-top:96px;
+}
+.left p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #7B7FDA;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.left span{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #E8E6F2;
+}
+
+
+
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 0;
+}
+.socialmedia a{
+    height: 34px;
+    width: 34px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 170px;
+    gap: 20px;
+    flex-grow: 1;
+}
+.right ul{
+    list-style: none;
+}
+.right p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7B7FDA;
+}
+.right ul li{
+    padding: 10px 0;
+}
+.right ul li a{
+    font-size: 14px;
+    line-height: 19px;
+    color: #E8E6F2;
+
+}
+.form{
+    position: relative;
+}
+.form input{
+    font-weight: 600;
+    font-size: 12px;
+    color: #301446;
+    padding: 10px 10px 10px 35px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #fff;
+    margin: 16px 0;
+}
+.form input::placeholder{
+    font-weight: 600;
+    font-size: 10px;
+    color: #301446;
+}
+.form img{
+    position: absolute;
+    top: 49px;
+    left: 12px;
+}
+.form label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #7B7FDA;
+    margin: 20px 0;
+}
+.form button{
+    background: #7B7FDA;
+    border-radius: 2px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+}
+.form button:hover,
+.form button:active {
+  opacity: 0.7;
+}

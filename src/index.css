@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --font: 'Open Sans', sans-serif;
+}
+body{
+  width: 100%;
+  font-family: var(--font)
+}
+#root{
+  width: 100%;
+}
