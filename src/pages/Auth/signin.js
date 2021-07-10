@@ -23,6 +23,7 @@ const Login = () => {
           </Link>
           <span className={classes.signin}>SIGN IN</span>
         </div>
+
         <h2>Login to your account</h2>
         <p className={classes.p}>
           Build skills for today, tomorrow, and beyond.

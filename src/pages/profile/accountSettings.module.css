@@ -60,24 +60,23 @@
     width: 80%;
     margin-left: 35px;
     margin-bottom: 18px;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 .formDiv input{
     width: 100%;
     padding: 20px;
     border: 1px solid #C4C4C4;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     font-size: 16px;
     color: #333333;
 }
 .formDiv span{
     background: #C4C4C4;
     border: 0.5px solid #C4C4C4;
-    box-sizing: border-box;
     border-radius: 0px 5px 5px 0px;
     padding: 7px;
-
+    position: absolute;
+    right: 0px;
 }
 .inputField{
     width: 80%;
@@ -86,7 +85,7 @@
     padding: 20px;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     color: #333333;
 }
 
@@ -112,4 +111,51 @@
 }
 .profileDiv form button:hover{
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 700px){
+    .mainBox{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .mainBox ul{
+        display:none;
+    }
+    .profileDiv{
+        width: 100%;
+    }
+    .profileDiv h3{
+        font-size: 18px;
+        padding: 25px 30px;
+
+    }
+    .profileDiv form{
+        margin-top: 35px;
+    }
+    .profileDiv label{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .formDiv{
+        margin-bottom: 0px;
+    }
+    .formDiv input{
+        padding: 15px;
+        font-size: 13px;
+
+    }
+    .formDiv span{
+        height: 48px;
+    }
+    .inputField{
+        padding: 15px;
+        font-size: 13px;
+    }
+    .mainBox{
+        margin: auto auto 55px auto;
+    }
+    .profileDiv form button{
+        margin-bottom: 140px;
+    
+    }
 }

@@ -71,7 +71,7 @@ const Footer =()=>{
                     <li><Link to="/about-us">Our Story</Link></li>
                 </ul>
             </div>
-            <div><br/>
+            <div>
                 <form className={classes.form}>
                     <label for="input">Subscribe</label>
                     <br/>

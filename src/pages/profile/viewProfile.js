@@ -9,7 +9,7 @@ const ViewProfile =()=>{
             <Header2B />
         <div className={classes.mainBox}>
             <aside>
-            <h2>Settings</h2>
+            <h2>SETTINGS</h2>
             <ul>
                 <li className={classes.profileLink}>View Profile</li>
                 <li><Link to="/account" className={classes.profileLink}>Account</Link></li>

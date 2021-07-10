@@ -62,7 +62,7 @@
     margin-bottom: 18px;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     color: #333333;
 }
 .select{
@@ -72,7 +72,7 @@
     margin-bottom: 18px;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     color: #000000;
     font-weight: 400;
     background: linear-gradient(90deg, #fff 96%, #C4C4C4 0%);
@@ -89,13 +89,14 @@
     background: #C4C4C4;
     border: 1px solid #C4C4C4;
     border-radius: 5px 0px 0px 5px;
+    font-size: 14px;
 }
 .socialLinks input{
     width: 100%;
     padding: 20px;
     border: 1px solid #C4C4C4;
     border-radius: 0px 5px 5px 0px;
-    font-size: 16px;
+    font-size: 14px;
     color: #333333;
 }
 
@@ -120,4 +121,50 @@
 }
 .profileDiv form button:hover{
     opacity: 0.8;
+}
+@media only screen and (max-width: 700px){
+    .mainBox{
+        flex-direction: column;
+        padding-top: 40px;
+        margin: auto auto 50px auto;
+}
+    .mainBox ul{
+        display:none;
+    }
+    .profileDiv{
+        width: 100%;
+    }
+    .profileDiv h3{
+        font-size: 18px;
+        padding: 25px 30px;
+
+    }
+    .profileDiv form{
+        margin-top: 35px;
+    }
+    .profileDiv label{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .profileDiv form p{
+        font-size: 8.5px;
+    }
+    .inputField{
+        padding: 15px;
+        font-size: 13px;
+    }
+    .select{
+        padding: 15px;
+    }
+    .socialLinks span{
+        font-size: 9px;
+        padding: 15px;
+    }
+    .socialLinks input{
+        padding: 15px;
+        font-size: 9px;
+    }
+    .profileDiv form button{
+        margin-bottom: 25px;
+    }
 }

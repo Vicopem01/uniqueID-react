@@ -19,7 +19,7 @@ const AccountSettings =()=>{
 
         <div className={classes.mainBox}>
             <aside>
-            <h2>Settings</h2>
+            <h2>SETTINGS</h2>
             <ul>
                 <li><Link to="/profile" className={classes.profileLink}>View Profile</Link></li>
                 <li className={classes.profileLink}>Account</li>

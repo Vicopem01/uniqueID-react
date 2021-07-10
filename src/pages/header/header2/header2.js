@@ -53,7 +53,7 @@ const Header2 =()=>{
             <ul>
                 <li><a className={classes.profileDropdownlink}>Notification</a> </li>
                 <li><a className={classes.profileDropdownlink}>Message</a></li>
-                <li><a className={classes.profileDropdownlink}>Account Settings</a></li>
+                <li><Link to="/account" className={classes.profileDropdownlink}>Account Settings</Link></li>
                 <li><a className={classes.profileDropdownlink}>Help</a></li>
                 <li><Link to="/" className={classes.profileDropdownlink}>Log out</Link></li>
             </ul>

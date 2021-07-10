@@ -24,19 +24,19 @@ const Footer =()=>{
                      {<br/>} best in class teachers, </span>
 
             </div>
-            <div>
+            <div className={classes.leftDiv}>
                 <p>Contact Us</p>
-                    <div style={{display:"flex", alignItems:"center", gap:"22px"}} >
+                    <div>
                     <img src={Phone} alt="Phone"/>
                     <span>+2349080281275</span>
                     </div>
                     <br/>
-                    <div style={{display:"flex", alignItems:"center", gap:"22px"}} >
+                    <div>
                 <img src={Mail} alt="Mail"/>
                 <span>grazactech@gmail.com</span>
                 </div>
                 <br/>
-                <div style={{display:"flex", alignItems:"center", gap:"22px"}} >
+                <div>
                 <img src={Location} alt="Location"/>
                 <span>2a Ibara housing estate kuto, Abeokuta 
                     {<br/>} Ogun state</span>
@@ -70,7 +70,7 @@ const Footer =()=>{
                     <li><Link to="/about-us">Our Story</Link></li>
                 </ul>
             </div>
-            <div><br/>
+            <div>
                 <form className={classes.form}>
                     <label for="input">Subscribe</label>
                     <br/>
