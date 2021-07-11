@@ -15,39 +15,55 @@ const Utilize = () => {
       </p>
       <div className={classes.flex}>
         <div className={classes.box}>
+          <div>
           <img src={Icon1} alt="image" className={classes.img1} />
+          </div>
+          <div>
           <p>Learn From Your Comfort Zone’s</p>
           <span>
             Egestas eleifend risus dui tempor morbi maecenas scelerisque eu.
             Eget ultrices cursus at vel.
           </span>
+          </div>
         </div>
 
         <div className={classes.box}>
+          <div>
           <img src={Icon2} alt="image" />
+          </div>
+          <div>
           <p>Learn From Expert in the Industry.</p>
           <span>
             Egestas eleifend risus dui tempor morbi maecenas scelerisque eu.
             Eget ultrices cursus at vel.
           </span>
         </div>
-
+        </div>
+        
         <div className={classes.box}>
+          <div>
           <img src={Icon3} alt="image" />
+          </div>
+          <div>
           <p>All Courses Simplified as Much As Possible</p>
           <span>
             Egestas eleifend risus dui tempor morbi maecenas scelerisque eu.
             Eget ultrices cursus at vel.
           </span>
         </div>
+        </div>
 
         <div className={classes.box}>
+          <div>
           <img src={Icon4} alt="image" />
+          </div>
+          <div>
           <p>All Courses Simplified as Much As Possible</p>
           <span>
             Egestas eleifend risus dui tempor morbi maecenas scelerisque eu.
             Eget ultrices cursus at vel.
           </span>
+          </div>
         </div>
       </div>
     </div>

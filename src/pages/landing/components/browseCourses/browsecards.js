@@ -10,7 +10,7 @@ const Cards = (props) => {
         <h5>{props.text}</h5>
         <p>{props.name}</p>
         <div className={classes.items}>
-          <img style={{ marginRight: "5px" }} src={props.star} alt="Ratings" />
+          <img className={classes.starRatings} src={props.star} alt="Ratings" />
           <span className={classes.shiftitems}>4.0</span>
           <img
             style={{ alignSelf: "end", marginRight: "5px" }}

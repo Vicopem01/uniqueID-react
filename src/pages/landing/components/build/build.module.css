@@ -34,3 +34,23 @@
 .a:active {
   opacity: 0.7;
 }
+@media screen and (max-width: 710px){
+    .h2{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+
+}
+@media screen and (max-width: 710px){
+.p{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 30px;
+
+}
+.a{
+
+}
+}

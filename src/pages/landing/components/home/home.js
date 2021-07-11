@@ -11,8 +11,8 @@ const Home = ()=>{
                 <div className={classes.flex}>
                     <div className={classes.left}>
                     <h1>You Can Start
-                    {<br />} Learning At Any Age!</h1>
-                    <p className={classes.p}>Our courses are desgined  to provide traning that’s as {<br/>} streamlined and to th the end point as possible</p>
+                     Learning At Any Age!</h1>
+                    <p className={classes.p}>Our courses are desgined  to provide traning that’s as streamlined and to th the end point as possible</p>
                     <div className={classes.inputContainer}>
                     <input className={classes.input} type="text" placeholder="Search For Course" />
                     <img src={Search} alt="Search" />

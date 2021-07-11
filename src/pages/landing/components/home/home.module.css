@@ -18,12 +18,13 @@
 .right{
     flex-grow: 0.3;
 }
-h1{
+.left h1{
     font-family: var(--font);
     font-weight: 600;
     font-size: 48px;
     color: #ffffff;
     line-height: 60px;
+    width: 80%;
 }
 .p{
     padding-top: 24px;
@@ -35,7 +36,7 @@ h1{
     color: #FFFFFF;
 }
 .right img{
-    width:110%;
+    width:105%;
 }
 .input{
     margin-top: 30px;
@@ -50,9 +51,6 @@ h1{
     color: #ffffff;
 }
 .input::placeholder{
-    font-family: var(--font);
-    font-weight: 400;
-    font-size: 16px;
     color: #ffffff;
 }
 .input:focus{
@@ -65,4 +63,59 @@ h1{
     position: absolute;
     right: 150px;
     top: 43px;
+}
+@media screen and (max-width:925px){
+    .home{
+    height: auto;
+    }
+    .flex{
+        display: block;
+        width: 80%;
+        margin: auto;   
+        padding-top: 0px;
+    }
+    .left h1{
+        font-size: 29px;
+        line-height: 38px;
+        padding-top: 23px;
+        width: 60%;
+    }
+    .left p{
+        font-size: 14px;
+        line-height: 17px;
+        width: 60%;
+    }
+    .right img{
+        display: none;
+        width: 100%;
+    }
+    .input{
+        margin-bottom: 61px;
+        width: 80%;
+    }
+}
+@media screen and (max-width:575px){
+    .home{
+        background-image: url("../../images/background-mobile.svg");
+        background-size: cover;
+        background-attachment: unset;
+        height: auto;
+        }
+        .input{
+            margin-bottom: 80px;
+            width: 70%;
+            font-size: 12px;
+        }
+        .inputContainer img{
+            right: 34%;
+        }
+}
+@media screen and (max-width:400px){
+    .left h1{
+        width: 90%;
+    }
+    .left p{
+        width: 90%;
+    }
+
 }

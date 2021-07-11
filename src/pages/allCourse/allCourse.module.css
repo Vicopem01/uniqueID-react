@@ -2,6 +2,8 @@
     background-image: url("../allCourse/images/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+    height: 85vh;
 }
 .titleFit{
     width: 90%;
@@ -114,6 +116,69 @@
 }
 .next{
     position: absolute;
-    bottom: -60px;
+    bottom: -73px;
     right: 25px;
 }
+
+@media screen and (max-width:832px){
+    .header{
+        background-image: url("../allCourse/images/background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        height: 75vh;
+    }
+    .header h1{
+        font-size: 36px;
+        padding-top: 50px;
+        padding-bottom: 8px;
+    }
+    .header p{
+        padding-bottom: 29px;
+        font-size: 14px;
+    }
+    .a{
+        font-size: 16px;
+        padding: 12px;
+    }
+    .aside{
+        padding-top: 0px;
+    }
+    .aside ul{
+        display: none;
+    }
+    .aside p{
+        padding-top: 32px;
+        font-size: 18px;
+    }
+    .aside p:nth-of-type(2), .aside p:nth-of-type(3){
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+.cardContainer input{
+ padding: 10px 13px 10px 42px;
+ margin-top: -30px;
+margin-left: auto;
+margin-right:0px;   
+}
+.search img{
+    right: 230px;
+bottom: 10px;
+}
+.twoCards{
+    gap:15px;
+}
+
+}
+
+@media screen and (max-width: 386px){
+    .cardContainer input{
+        width: 50%;
+    }
+    .search img{
+        right: 41%;
+    }
+
+}   

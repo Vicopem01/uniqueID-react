@@ -56,3 +56,26 @@
     margin: auto;
     width: 100%;
 }
+
+@media screen and (max-width: 944px){
+.box:nth-of-type(3){
+  display:none;
+}
+
+}
+@media screen and (max-width: 630px){
+  .h2{
+  padding-top: 40px;
+  width: 85%;
+  margin: auto;
+  }
+.box:nth-of-type(2){
+  display:none;
+}
+.arrow{
+  right: -11px;
+}
+.flex{
+   margin-bottom: 150px;
+}
+}

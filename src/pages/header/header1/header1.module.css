@@ -2,18 +2,18 @@
     width: 100%;
     padding-bottom: 30px;
 }
-.ul a:hover,
-.ul a:active {
+.ul1 a:hover,
+.ul1 a:active {
   opacity: 0.7;
 }
-.ul{
+.ul1{
     list-style: none;
     display: flex;
     justify-content: flex-end;
     margin-right: 80px;
     padding-top: 25px;
 }
-.ul li{
+.ul1 li{
     float: left;
     font-size: 16px;
 }
