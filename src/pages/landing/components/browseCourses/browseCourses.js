@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import classes from "./browse.module.css";
 import Cards from "./browsecards";
 import Image1 from "../../images/image1.svg";
@@ -12,10 +11,6 @@ import { Link } from "react-router-dom";
 
 
 const Browse = ()=>{
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
 
     return(
         <div className={classes.div}>

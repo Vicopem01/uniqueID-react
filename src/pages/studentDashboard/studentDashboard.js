@@ -8,7 +8,7 @@ import BrowseCards from "../landing/components/browseCourses/browsecards"
 import CourseImage from "./images/courseImage.svg"
 import Star from "./images/star.svg"
 import EyeClear from "./images/eyeclear.svg"
-
+import Partners from "../landing/components/partners/partners"
 
 const StudentDashboard =()=>{
     return(
@@ -24,7 +24,7 @@ const StudentDashboard =()=>{
             </section>
             <section className={classes.overflow}>
                 <h2>Welcome back, Kolawole</h2>
-                <p>Ready to dive in ?</p>
+                <p  className={classes.overflowText}>Ready to dive in ?</p>
                 <div className={classes.mainCard}>
                     <div className={classes.subCard}>
                     <Cards/>
@@ -56,8 +56,8 @@ const StudentDashboard =()=>{
             </section>
             <section className={classes.courses}>
                 <div>
-                    <p>Because you enroll in <strong>“Branding creative  Basics”</strong></p>
-                    <div>
+                    <p className={classes.coursesText}>Because you enroll in <strong>“Branding creative  Basics”</strong></p>
+                    <div  className={classes.coursesDiv}>
                         <BrowseCards
                         img={CourseImage}
                         text="Introduction to Personal Branding"
@@ -77,10 +77,8 @@ const StudentDashboard =()=>{
                         star={Star}
                         eye={EyeClear} />
                     </div>
-                </div>
-                <div>
-                    <p>Top course on Branding</p>
-                    <div>
+                    <p className={classes.coursesText}>Top course on Branding</p>
+                    <div  className={classes.coursesDiv}>
                     <BrowseCards
                         img={CourseImage}
                         text="Introduction to Personal Branding"
@@ -100,10 +98,8 @@ const StudentDashboard =()=>{
                         star={Star}
                         eye={EyeClear} />
                     </div>
-                </div>
-                <div>
-                    <p>Short and creative course for you</p>
-                    <div>
+                    <p className={classes.coursesText}>Short and creative course for you</p>
+                    <div  className={classes.coursesDiv}>
                     <BrowseCards
                         img={CourseImage}
                         text="Introduction to Personal Branding"
@@ -125,7 +121,7 @@ const StudentDashboard =()=>{
                     </div>
                 </div>
             </section>
-
+            <Partners />
             <Footer />
         </div>
     )

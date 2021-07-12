@@ -49,7 +49,6 @@
     justify-content: space-around;
     margin-top: 20px;
     position: relative;
-    overflow-y: auto;
 }
 
 
@@ -64,8 +63,10 @@
         padding-bottom: 33px;;
     }
     .flexbox{
+        overflow-x: auto;
         justify-content: flex-start;
         gap: 30px;
+        padding-bottom: 20px;
     }
     .arrow{
         position: absolute;

@@ -16,7 +16,7 @@ const Footer =()=>{
         <div className={classes.div}>
         <div className={classes.flexbox}>
             <div className={classes.left}>
-            <img src={Logo} alt="logo" className={classes.logo} />
+            <Link to="/"><img src={Logo} alt="logo" className={classes.logo} /></Link>
             <div>
                 <p>About Us</p>
                 <span>The UniqueIQ is the first of its kind in
