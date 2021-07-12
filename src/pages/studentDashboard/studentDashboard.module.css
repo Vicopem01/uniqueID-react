@@ -19,14 +19,14 @@
 .main h1 {
   font-weight: 600;
   font-size: 46px;
-  line-height: 59px;
+  line-height: 41px;
   color: #ffffff;
   padding-top: 81px;
   padding-left: 65px;
 }
 .main p {
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 22px;
   padding-left: 65px;
   padding-top: 46px;
   color: #ffffff;
@@ -153,6 +153,22 @@
     display: inline-block; 
 }
 @media (max-width: 825px){
+    .main{
+        height: 70vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("./images/bg-mobile.svg");
+        background-size: cover, 122%;
+        background-position: right center;
+    }
+    .main h1{
+        padding-top: 90px;
+        padding-left: 26px;
+        font-size: 30px;
+    }
+    .main p{
+        width: 90%;
+        padding-left: 26px;
+    }
     .mainCard{
         display: grid;
         grid-template-columns: auto auto;
