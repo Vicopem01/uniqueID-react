@@ -117,7 +117,6 @@
 .profileDropdown{
     position: absolute;
     width: 254px;
-    height: 483px;
     background: #FFFFFF;
     border-radius: 2px;
     right: 28px;
@@ -180,4 +179,87 @@
 .profileDropdown li{
     padding-top: 20px;
     padding-left: 36px;    
+}
+.menu, .logo, .search, .cart{
+    display: none;
+}
+.ul2 {
+    display: none;
+}
+.ul2 li{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.ul1 li:last-child, .ul2 li:last-child{
+    padding-bottom: 60px;
+}
+.profileDropdown h6{
+    display: none;
+}
+@media screen and (max-width:712px){
+    .header2{
+        display: none;
+    }
+    .profile{
+        display: none;
+    }
+    .menu, .logo, .search, .cart{
+        display: inline-block;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu{
+        margin-right: 15%;
+        z-index: 1;
+        padding: 0 10px;
+    }
+    .logo{
+        width: 56px;
+        height: 37px;
+        margin-top: 12px;
+    }
+    .menu:hover ~ .profileDropdown, .profileDropdown:hover{
+        display: block;
+    }
+    .profileDropdown{
+        left: 0px;
+        top: 40px;
+        padding-top: 10px;
+    }
+    .topDiv{
+        /* text-align: left; */
+        width: 73%;
+        margin: auto;
+    }
+    .profile1{
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    .profileName, .profileName~p{
+        text-align: left;
+    }
+    .profileDropdown h6{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #333333;
+        padding: 1px 0px 17px 0px;
+    }
+    .viewProfile{
+        margin-left: 0px;
+    }
+    .ul1{
+        display: none;
+    }
+    .ul2{
+        display: block;
+        width: 85%;
+    }
 }

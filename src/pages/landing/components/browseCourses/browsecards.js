@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./browse.module.css";
+import classes from "./browsecards.module.css";
 
 const Cards = (props) => {
   return (

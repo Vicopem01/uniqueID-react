@@ -43,134 +43,34 @@
 .li:hover:after {
     border-bottom: 5px solid #2A1B3F;
     width: 100%;
-  }
+}
 .flexbox{
     display:flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 20px;
     position: relative;
+    overflow-y: auto;
 }
 
-.box{
-    width: 255px;
-    height: 315px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 15px 15px 0px 15px;
-    position: relative;
-}
 
-.hiddenP{
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-    width: 55%;
-    opacity: 0;
-}
-.box:hover .mainImage{
-    filter: brightness(0.3);
-}
-.box:hover .hiddenP{
-    opacity:1 ;
-    z-index: 1;
-}
-.inner{
-    width: 80%;
-    margin: auto;
-}
-.inner h5{
-    padding: 15px 0px;
-    line-height: 22px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #301446;
-}
-.inner p{
-    font-weight: 600;
-    padding-bottom: 18px;
-    font-size: 14px;
-    line-height: 19px;
-    color: #332965;
-}
-.inner span{
-    font-weight: 600;
-    font-size: 14px;
-    color: #C4C4C4;
-}
-.items{
-    display:flex;
-    align-items:center;
-    width: 85%;
-}
-.starRatings{
-    margin-right: 5px;
-}
-.shiftitems{
-    margin-right: auto;
-}
-.box .price{
-    font-weight: 600;
-    font-size: 24px;
-    color: #2A1B3F;
-    margin-left: 15px;
-}
-.box del{
-    font-size: 14px;
-    color: #23262A;
-}
-.arrow{
-    position: absolute;
-    right: 20px;
-    bottom: 0px;
-}
 @media screen and (max-width:906px){
+    .div{
+        margin-bottom: 56px;
+    }
     .ul{
         display: none;
     }
-
-}
-@media screen and (max-width:570px){
+    .h2{
+        padding-bottom: 33px;;
+    }
     .flexbox{
-        overflow-x:scroll;
+        justify-content: flex-start;
+        gap: 30px;
     }
-    .box{
-        width: 166.53px;
-        height: 234.71px;
-    }
-    .mainImage{
-        max-width: 100%;
-    height: auto;
+    .arrow{
+        position: absolute;
+        bottom: 100px;
+        left: 840px;
     }
     
-    .inner h5{
-        font-size: 11.5px;
-        padding: 10px 0;
-    }
-    .inner p{
-        font-size: 10.5px;
-        padding-bottom: 11.5px;
-    }
-    .starRatings{
-        width: 45%;
-        height: auto;
-    }
-    .items{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .items span{
-        font-size: 11.5px;
-        margin-right: 7px;
-    }
-    .box del{
-        font-size: 11px;
-    }
-    .box .price{
-        font-size: 17.5px;
-    }
 }

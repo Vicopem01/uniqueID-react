@@ -1,6 +1,7 @@
 .header{
     width: 100%;
     padding-bottom: 30px;
+    position: relative;
 }
 .ul1 a:hover,
 .ul1 a:active {
@@ -26,4 +27,97 @@
     background-color: #FFFFFF;
     padding: 10px 35px;
     border-radius: 5px;
+}
+.menu, .logo, .search, .cart{
+    display: none;
+}
+
+.hiddenMenu{
+    display: none;
+}
+@media screen and (max-width: 760px){
+    .header{
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .smallHeader{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .menu:hover ~ .hiddenMenu, .hiddenMenu:hover{
+        display: block;
+    }
+    .menu, .search, .cart, .logo{
+        display: inline-block;
+    }
+    .ul1{
+        display: none;
+    }
+    
+    .menu{
+        z-index: 100;
+        margin-right: 15%;
+    }
+    .logo{
+        width: 56px;
+        height: 37px;
+    }
+    .hiddenMenu{
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        padding-top: 20px;
+        background-color: #fff;
+        width: 254px;
+        border-radius: 2px;
+        z-index: 1;
+}
+.hiddenMenu p{
+    width: 80%;
+    margin: auto;
+    font-weight: 700;
+    padding: 25px 0px 0px 0px;
+}
+
+.ul3 li, .ul4{
+    width: 80%;
+    margin: auto;
+    list-style: none;
+}
+.ul3{
+    border-bottom: 1px solid #C4C4C4;
+}
+.ul3 li:last-child{
+    padding-bottom: 38px;
+}
+.ul3 li{
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 21px;
+}
+.ul3 li a{
+    color: #301446;
+}
+.ul4 li{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.ul4 li:last-child{
+    padding-bottom: 60px;
+}
+.ul3 li a:hover, .ul4 li:hover{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
 }

@@ -6,8 +6,8 @@ import Dropdown from "./images/dropdown-arrow.svg";
 import Cart from "./images/cart.svg";
 import Bell from "./images/bell.svg";
 import Courses from "./header2Courses";
-
-
+import Menu from "./images/menu.svg"
+import ForwardArrow from "./images/forward-arrow.svg"
 
 
 const Header2 =()=>{
@@ -38,7 +38,10 @@ const Header2 =()=>{
             <div className={classes.profile}>
                 <h2>K</h2>
             </div>
-
+            <img src={Menu} alt="menu"  className={classes.menu}/>
+            <Link to="/"> <img src={Logo} alt="logo" className={classes.logo} /></Link>
+            <img src={Search} alt="search" className={classes.search}/>
+            <img src={Cart} alt="cart" className={classes.cart}/>
 
 
         <div className={classes.profileDropdown}>
@@ -49,13 +52,24 @@ const Header2 =()=>{
             <h2 className={classes.profileName}>Kolawole Oluwatobi</h2>
             <p>kolawoletobbey@gmail.com</p>
             <Link to="/profile" className={classes.viewProfile}>View profile</Link>
+            <h6 className={classes.course}> My Course</h6>
             </div>
-            <ul>
+            <ul className={classes.ul1}>
                 <li><a className={classes.profileDropdownlink}>Notification</a> </li>
                 <li><a className={classes.profileDropdownlink}>Message</a></li>
                 <li><Link to="/account" className={classes.profileDropdownlink}>Account Settings</Link></li>
                 <li><a className={classes.profileDropdownlink}>Help</a></li>
                 <li><Link to="/" className={classes.profileDropdownlink}>Log out</Link></li>
+            </ul>
+            <ul className={classes.ul2}>
+                <li>Artficial Intelligence <img src={ForwardArrow} alt=""/></li>
+                <li>Branding <img src={ForwardArrow} alt=""/></li>
+                <li>Business <img src={ForwardArrow} alt=""/></li>
+                <li>Design <img src={ForwardArrow} alt=""/></li>
+                <li>Data & Analytic <img src={ForwardArrow} alt=""/></li>
+                <li>Help</li>
+                <li><Link to="/" className={classes.profileDropdownlink}>Log out</Link></li>
+
             </ul>
         </div>
 

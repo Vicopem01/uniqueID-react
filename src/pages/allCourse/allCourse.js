@@ -3,12 +3,12 @@ import classes from "./allCourse.module.css";
 import Header from "../header/header1/header1";
 import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
-import BrowseCards from "../landing/components/browseCourses/browsecards";
+import BrowseCardsResponsive from "../landing/components/browseCourses/browsecardsResponsive";
 import Image1 from "../allCourse/images/image1.svg";
 import Image2 from "../allCourse/images/image2.svg";
 import Image3 from "../allCourse/images/image3.svg";
 import EyeBlur from "../allCourse/images/eye-blur.svg";
-import Eyeclear from "../allCourse/images/eye-clear.svg";
+// import Eyeclear from "../allCourse/images/eye-clear.svg";
 import Stars from "../allCourse/images/stars.svg";
 import Next from "../allCourse/images/nextArrow.svg";
 import Prev from "../allCourse/images/prevArrow.svg";
@@ -73,13 +73,13 @@ const AllCourse = () => {
             <img src={Search} alt="Search" />
             </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image1}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
@@ -87,13 +87,13 @@ const AllCourse = () => {
          eye={EyeBlur}/>
          </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image3}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
@@ -101,13 +101,13 @@ const AllCourse = () => {
          eye={EyeBlur}/>
          </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image1}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
@@ -115,13 +115,13 @@ const AllCourse = () => {
          eye={EyeBlur}/>
          </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image1}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
@@ -129,13 +129,13 @@ const AllCourse = () => {
          eye={EyeBlur}/>
          </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image1}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
@@ -143,13 +143,13 @@ const AllCourse = () => {
          eye={EyeBlur}/>
          </div>
             <div className={classes.twoCards}>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image1}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"
         star={Stars}
         eye={EyeBlur}/>
-        <BrowseCards
+        <BrowseCardsResponsive
         img={Image2}
         text="Branding: The Creative Journey"
         name="Ogungbemi Tobi"

@@ -49,7 +49,7 @@ const Browse = ()=>{
               name="Ogungbemi Tobi"
               star={Stars} 
               eye={EyeBlur}/>
-                <img src={ArrowForward} alt="next" className={classes.arrow}/>
+                <Link to="all-courses" className={classes.arrow}><img src={ArrowForward} alt="next" /></Link>
               </div> 
         </div>
     )

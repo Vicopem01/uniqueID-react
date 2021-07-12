@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Arrow from "./images/course-category-arrow.svg"
+import ForwardArrow from "./images/forward-arrow.svg"
 import classes from "./header1.module.css"
 import Menu from "./images/menu.svg"
 import Logo from "./images/logo.svg"
@@ -21,12 +22,27 @@ const Header1= ()=>{
                 <li><Link to="/sign-in" className={classes.link}>Login</Link> </li>
                 <li><Link to="/sign-up" className={classes.signup}>Sign up</Link> </li>
             </ul>
-            <ul>
-                <li><img src={Menu} alt="menu"/></li>
-                <li><img src={Logo} alt="logo"/></li>
-                <li><img src={Search} alt="search"/></li>
-                <li><img src={Cart} alt="cart"/></li>
-            </ul>
+            <div className={classes.smallHeader}>
+                <img src={Menu} alt="menu"  className={classes.menu}/>
+                <Link to="/"> <img src={Logo} alt="logo" className={classes.logo} /></Link>
+                <img src={Search} alt="search" className={classes.search}/>
+                <img src={Cart} alt="cart" className={classes.cart}/>
+            <div className={classes.hiddenMenu}>
+                <ul className={classes.ul3}>
+                    <li><Link to="/sign-in">Sign Up</Link></li>
+                    <li><Link to="/sign-in">Log in</Link></li>
+                </ul>
+                <p>Course</p>
+                <ul className={classes.ul4}>
+                    <li>Artficial Intelligence <img src={ForwardArrow} alt=""/></li>
+                    <li>Branding <img src={ForwardArrow} alt=""/></li>
+                    <li>Business <img src={ForwardArrow} alt=""/></li>
+                    <li>Design <img src={ForwardArrow} alt=""/></li>
+                    <li>Data & Analytic <img src={ForwardArrow} alt=""/></li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            </div>
         </header>
     )
 }
