@@ -31,12 +31,11 @@ const Preview =()=>{
         setIsShow(!isShow);
         setIsTrue(!isTrue);
     };
-    // const Isshow =()=>
 
 
     return(
         <div>
-            <div style={{background: "#301446"}}>
+            <div className={classes.bigDiv}>
             <Header />
             <div className={classes.headerContent}>
                 <div className={classes.mainHead}>

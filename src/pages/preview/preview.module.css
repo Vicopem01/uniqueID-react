@@ -1,3 +1,6 @@
+.bigDiv{
+    background: #301446;
+}
 .headerContent{
     display: flex;
     width: 85%;
@@ -339,6 +342,9 @@
 }
 
 @media screen and (max-width: 952px){
+    .bigDiv{
+        background: #fff;
+    }
     .headerContent{
         flex-direction: column-reverse;
         width: 100%;
@@ -496,17 +502,13 @@
     .preview{
         height: 512px;
     }
-    .mainImage2{
-        width: 130%;
-    }
+    
     }
 @media screen and (max-width: 572px){
     .preview{
         height: 440px;
     }
-    .mainImage2{
-        width: 150%;
-    }
+    
 }
 @media screen and (max-width: 492px){
     .textareaBox textarea{
@@ -526,5 +528,9 @@
 .alinks{
     display: flex;
 }
-
+}
+@media screen and (max-width: 320px){
+    .preview{
+        height: 320px;
+    }
 }
