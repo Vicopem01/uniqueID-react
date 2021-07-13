@@ -442,11 +442,21 @@
         display: flex;
         gap: 20px;
     }
+    .showMore{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #751D52;
+        cursor: pointer;
+    }
     .ul{
         padding-bottom: 0px;
     }
 .requirement h3{
     padding-top: 50px;
+}
+.fade{
+    opacity: 0.1;
 }
 .outline li{
     justify-content: center;

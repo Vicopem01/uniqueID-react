@@ -19,12 +19,11 @@ const Header1= ()=>{
                 <img src={Arrow} alt="arrow" style={{paddingLeft:"15px"}}/>
                 </a> 
                 <ul className={classes.ul5}>
-                    <li>Artficial Intelligence <img src={ForwardArrow} alt=""/></li>
-                    <li>Branding <img src={ForwardArrow} alt=""/></li>
-                    <li>Business <img src={ForwardArrow} alt=""/></li>
-                    <li>Design <img src={ForwardArrow} alt=""/></li>
-                    <li>Data & Analytic <img src={ForwardArrow} alt=""/></li>
-                    <li>Help</li>
+                    <li><Link to="/all-courses"> Artficial Intelligence <img src={ForwardArrow} alt=""/></Link></li>
+                    <li><Link to="/all-courses"> Branding <img src={ForwardArrow} alt=""/></Link></li>
+                    <li><Link to="/all-courses"> Business <img src={ForwardArrow} alt=""/></Link></li>
+                    <li><Link to="/all-courses"> Design <img src={ForwardArrow} alt=""/></Link></li>
+                    <li><Link to="/all-courses"> Data & Analytic <img src={ForwardArrow} alt=""/></Link></li>
                 </ul>
                 </li>
                 <li><Link to="/about-us" className={classes.link}>About us</Link> </li>

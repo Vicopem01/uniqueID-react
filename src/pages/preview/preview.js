@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Header from "../header/header1/header1";
@@ -20,11 +20,19 @@ import Dropdown2 from "./images/dropdown2.svg";
 
 
 const Preview =()=>{
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      });
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //   });
 
     const [isActive, setIsActive] = useState(false);
+    const [isTrue, setIsTrue] = useState(false);
+    const [isShow, setIsShow] = useState(true);
+    const Istrue =()=>{
+        setIsShow(!isShow);
+        setIsTrue(!isTrue);
+    };
+    // const Isshow =()=>
+
 
     return(
         <div>
@@ -97,14 +105,14 @@ const Preview =()=>{
                     REQUIREMENT
                  <img src={DropdownArrow} alt=""/></h3>
 
-                {isActive && <div className="accordion-content">
+                {isActive && <div>
                 <ul>
                     <li>Nothing but motivate yourself</li>
                     <li>Good internet connection</li>
                 </ul>
                 </div>}
                 <h3>DESCRIPTION</h3>
-                <p>This Specialization aims to make branding concepts accessible
+                <p className={classes.remove}>This Specialization aims to make branding concepts accessible
                      to every learner and to teach them to analyze and apply all
                       the relevant concepts, using the broad and diverse toolkit 
                       of branding. It provides you with the necessary tools so 
@@ -116,7 +124,24 @@ const Preview =()=>{
                          makes it hard for brands to break through that
                           noise. It ends up teaching how to understand branding
                            efforts in the context of customer experience.</p>
-                           <p>Show more</p>
+                <p>This Specialization aims to make branding concepts accessible
+                     to every learner and to teach them to analyze and apply all the 
+
+                    {isShow && <span className={classes.fade}> relevant concepts,
+                     using the broad and diverse toolkit of 
+                        branding. It provides you with the </span>}
+
+                        {isTrue && <span  className={classes.appear}> relevant concepts, using the broad and diverse toolkit 
+                      of branding. It provides you with the necessary tools so 
+                      that you are able to understand the brand behavior, 
+                      understand the language of a brand and learn about the 
+                      rational and emotional elements behind brands. It also
+                       attempts to make you understand the language of images.
+                        The amount of audiovisual content we receive today
+                         makes it hard for brands to break through that
+                          noise. It ends up teaching how to understand branding
+                           efforts in the context of customer experience.</span>}</p>
+                           <div onClick={Istrue} className={classes.showMore}>Show more<img src={Dropdown2} alt=""/></div>
             </section>
             <section className={classes.outline}>
                 <h3>COURSE OUTLINE </h3>
