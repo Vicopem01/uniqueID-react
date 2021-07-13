@@ -342,9 +342,6 @@
 }
 
 @media screen and (max-width: 952px){
-    .bigDiv{
-        background: #fff;
-    }
     .headerContent{
         flex-direction: column-reverse;
         width: 100%;
@@ -381,6 +378,7 @@
         margin-top: 0px;
         padding-top: 0px;
         border-radius: 0px;
+        background: #fff;
         overflow-x: hidden;
     }
     .mainImage{
@@ -518,10 +516,7 @@
         left: 57%;
     }
     .preview{
-        height:380px;
-    }
-    .mainImage2{
-        width: 170%;
+        height: 310px;
     }
 }
 @media screen and (max-width: 370px){
@@ -531,6 +526,6 @@
 }
 @media screen and (max-width: 320px){
     .preview{
-        height: 320px;
+        height: 241px;
     }
 }
