@@ -2,11 +2,11 @@
     background-color: #301446;
     position: relative;
     display: flex;
-    align-items: center;
-    padding-bottom: 10px; 
+    align-items: center
 }
 .header2{
-    padding-top: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     width: 90%;
     margin: auto;
     display: flex;
@@ -79,21 +79,49 @@
     margin: auto;
     border-bottom: 1px solid #C4C4C4;
 }
-.bigDiv p{
+.bigDiv h5{
     font-weight: 600;
     font-size: 14px;
     color: #301446;
     display: flex;
     flex-direction: column;
+    padding-bottom: 8px;
 }
 
-.bigDiv span{
+.bigDiv p{
     font-weight: 600;
     font-size: 12px;
     color: #332965;
 }
 .cart{
     z-index: 1;
+}
+.cartDropdown{
+    display: none;
+    width:340px;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    left: 57%;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+.cartDropdown p{
+    font-size: 14px;
+    color: #000000;
+    width: 50%;
+    margin: 70px auto 20px auto;
+}
+.cartDropdown a{
+    font-size: 14px;
+    color: #00385C;
+    float: right;
+    padding: 12px 32px;
+    display: block;
+    margin-top: auto;
+}
+.cart:hover~.cartDropdown, .cartDropdown:hover{
+    display: block;
 }
 .profile{
     width: 60px;
@@ -118,7 +146,6 @@
 .profileDropdown{
     position: absolute;
     width: 254px;
-    height: 483px;
     background: #FFFFFF;
     border-radius: 2px;
     right: 28px;
@@ -142,7 +169,7 @@
 .profile1 h2{
     font-weight: 600;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #fff;
     
     
 }
@@ -181,4 +208,91 @@
 .profileDropdown li{
     padding-top: 20px;
     padding-left: 36px;    
+}
+.menu, .logo, .search, .cart1{
+    display: none;
+}
+.ul2 {
+    display: none;
+}
+.ul2 li{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.ul1 li:last-child, .ul2 li:last-child{
+    padding-bottom: 60px;
+}
+.profileDropdown h6{
+    display: none;
+}
+@media screen and (max-width:712px){
+    .header{
+        padding: 10px 0;
+    }
+    .header2{
+        display: none;
+    }
+    .cart, .search, .menu{
+        display: none;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu{
+        margin-right: 15%;
+        z-index: 1;
+        padding: 0 10px;
+    }
+    .logo{
+        width: 56px;
+        height: 37px;
+        margin-top: 12px;
+    }
+    .menu:hover ~ .profileDropdown, .profileDropdown:hover{
+        display: block;
+    }
+    
+    .profileDropdown{
+        left: 0px;
+        top: 40px;
+        padding-top: 10px;
+    }
+    .topDiv{
+        /* text-align: left; */
+        width: 73%;
+        margin: auto;
+    }
+    .profile1{
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    .profileName, .profileName~p{
+        text-align: left;
+    }
+    .profileDropdown h6{
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #333333;
+        padding: 1px 0px 17px 0px;
+    }
+    .viewProfile{
+        margin-left: 0px;
+    }
+    .ul1{
+        display: none;
+    }
+    .ul2{
+        display: block;
+        width: 85%;
+    }
 }

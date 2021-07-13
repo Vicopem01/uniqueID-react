@@ -76,9 +76,12 @@
     }
     .mainCon{
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
         overflow-x: auto;
         padding-bottom: 20px;
+    }
+    .subCon{
+        flex-direction: row;
     }
 }

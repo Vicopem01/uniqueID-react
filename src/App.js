@@ -5,12 +5,11 @@ import Signup from "./pages/Auth/signup"
 import AboutUs from "./pages/AboutUs/aboutus"
 import AllCourse from "./pages/allCourse/allCourse"
 import Preview from './pages/preview/preview'
-import SingleCourse from "./pages/singleCourse/singleCourse"
 import StudentDashboard from './pages/studentDashboard/studentDashboard';
 import ViewProfile from "./pages/profile/viewProfile"
 import AccountSettings from "./pages/profile/accountSettings"
 import OngoingCourse from "./pages/ongoingCourses/ongoingCourse"
-
+import Error404 from "./pages/404/error404"
 import {
   Switch, 
   Route,
@@ -30,11 +29,12 @@ function App() {
         <Route path="/about-us" exact component={AboutUs} />
         <Route path="/all-courses" exact component={AllCourse} />
         <Route path="/course-preview" exact component={Preview} /> 
-        <Route path="/single-course-page" exact component={SingleCourse} />
         <Route path="/profile" exact component={ViewProfile} />
         <Route path="/account" exact component={AccountSettings} />
         <Route path="/my-courses" exact component={OngoingCourse} />
-        <Route path="/" component={Landing} />
+        <Route path="/" exact component={Landing} />
+        <Route path="/*" component={Error404} />
+
       </Switch>
     </div>
   );

@@ -15,9 +15,18 @@ const Header1= ()=>{
         <header className={classes.header}>
             <ul className={classes.ul1}>
                 <li><Link to="/" className={classes.link}>Home</Link> </li>
-                <li><a href="#2" className={classes.link}>Course Categories
+                <li className={classes.hover}><a href="#2" className={classes.link}>Course Categories
                 <img src={Arrow} alt="arrow" style={{paddingLeft:"15px"}}/>
-                </a> </li>
+                </a> 
+                <ul className={classes.ul5}>
+                    <li>Artficial Intelligence <img src={ForwardArrow} alt=""/></li>
+                    <li>Branding <img src={ForwardArrow} alt=""/></li>
+                    <li>Business <img src={ForwardArrow} alt=""/></li>
+                    <li>Design <img src={ForwardArrow} alt=""/></li>
+                    <li>Data & Analytic <img src={ForwardArrow} alt=""/></li>
+                    <li>Help</li>
+                </ul>
+                </li>
                 <li><Link to="/about-us" className={classes.link}>About us</Link> </li>
                 <li><Link to="/sign-in" className={classes.link}>Login</Link> </li>
                 <li><Link to="/sign-up" className={classes.signup}>Sign up</Link> </li>

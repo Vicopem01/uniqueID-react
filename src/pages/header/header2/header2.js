@@ -34,6 +34,10 @@ const Header2 =()=>{
         </div>
             <img src={Cart} alt="" className={classes.cart}/>
             <img src={Bell} alt=""/>
+            <div className={classes.cartDropdown}>
+                <p>Your cart is empty</p>
+            <Link to="/all-courses">Explore Courses</Link>
+            </div>
         </div>
             <div className={classes.profile}>
                 <h2>K</h2>
@@ -41,7 +45,7 @@ const Header2 =()=>{
             <img src={Menu} alt="menu"  className={classes.menu}/>
             <Link to="/"> <img src={Logo} alt="logo" className={classes.logo} /></Link>
             <img src={Search} alt="search" className={classes.search}/>
-            <img src={Cart} alt="cart" className={classes.cart}/>
+            <img src={Cart} alt="cart" className={classes.cart1}/>
 
 
         <div className={classes.profileDropdown}>

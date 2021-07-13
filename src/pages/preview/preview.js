@@ -15,14 +15,14 @@ import Check from "../preview/images/check.svg";
 import Circle from "../preview/images/circle.svg";
 import Plus from "../preview/images/plus.svg";
 import Stars3 from "../preview/images/3stars.svg";
-import DropdownArrow from "./images/dropdown-arrow.svg"
-import Dropdown2 from "./images/dropdown2.svg"
+import DropdownArrow from "./images/dropdown-arrow.svg";
+import Dropdown2 from "./images/dropdown2.svg";
 
 
 const Preview =()=>{
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //   });
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      });
 
     const [isActive, setIsActive] = useState(false);
 
