@@ -13,8 +13,6 @@ import Error404 from "./pages/404/error404"
 import {
   Switch, 
   Route,
-  useParams,
-  Redirect,
 } from "react-router-dom"
 
 
