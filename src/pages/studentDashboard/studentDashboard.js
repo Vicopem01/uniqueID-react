@@ -1,6 +1,6 @@
+import { useEffect } from "react";
 import classes from "./studentDashboard.module.css"
 import Header2 from "../header/header2/header2"
-import { Link } from "react-router-dom";
 import Cards from "./courseCards"
 import Forward from "./images/forward.svg"
 import Footer from "../footer/footer2"
