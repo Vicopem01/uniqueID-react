@@ -30,7 +30,7 @@ const Header2 =()=>{
             <Courses />
             <Courses />
             <Courses />
-            <span>See all</span>
+            <Link to="/my-courses">See all</Link>
         </div>
             <img src={Cart} alt="" className={classes.cart}/>
             <img src={Bell} alt=""/>

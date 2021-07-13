@@ -61,7 +61,7 @@
     padding-top: 10px;
     overflow-y: scroll;
 }
-.courseDropdown span{
+.courseDropdown a{
     font-size: 14px;
     color: #00385C;
     float: right;

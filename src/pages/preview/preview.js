@@ -9,6 +9,7 @@ import Share from "../preview/images/share.svg";
 import SharePurple from "../preview/images/share-purple.svg";
 import Avatar from "../preview/images/avatar.svg";
 import Man from "../preview/images/man-video.svg";
+import ManMobile from "../preview/images/man-reading-mobile.svg";
 import Play from "../preview/images/play.svg";
 import Check from "../preview/images/check.svg";
 import Circle from "../preview/images/circle.svg";
@@ -56,6 +57,7 @@ const Preview =()=>{
                 </div>
                 <div className={classes.preview}>
                 <img src={Man} alt="video" className={classes.mainImage}/>
+                <img src={ManMobile} alt="video" className={classes.mainImage2}/>
                 <img src={Play} alt="Play" className={classes.play}/>
                 <p>Preview Course</p>
                 </div>
@@ -86,8 +88,8 @@ const Preview =()=>{
 
             <section className={classes.requirement}>
 
-                <h3 className={classes.Pc}>REQUIREMENT</h3>
-                <ul className={classes.Pc}>
+                <h3 className={classes.remove}>REQUIREMENT</h3>
+                <ul className={classes.remove}>
                     <li>Nothing but motivate yourself</li>
                     <li>Good internet connection</li>
                 </ul>
@@ -179,7 +181,7 @@ const Preview =()=>{
                     </div>
                     <p>2 weeks ago <br/>Jessy Ndendzi</p>
                 </div>
-                <div className={classes.righContent}>
+                <div className={classes.rightContent}>
                 <img src={Stars} alt=""/>
                 <p>Very insightful course. It helps to
                     have a better understanding of key
@@ -194,7 +196,7 @@ const Preview =()=>{
                     </div>
                     <p>2 weeks ago <br/>Jessy Ndendzi</p>
                 </div>
-                <div className={classes.righContent}>
+                <div className={classes.rightContent}>
                 <img src={Stars3} alt=""/>
                 <p>Very insightful course. It helps to
                     have a better understanding of key
@@ -221,7 +223,7 @@ const Preview =()=>{
             <div className={classes.comment}>
                 <div className={classes.spacing}>
                 <span className={classes.text}>Comment</span>
-                <div>
+                <div className={classes.divSpans}>
                     <span className={classes.pages}>1</span>
                     <span className={classes.pages}>2</span>
                     <span className={classes.pages}>3</span>

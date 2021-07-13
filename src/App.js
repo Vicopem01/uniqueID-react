@@ -9,6 +9,7 @@ import SingleCourse from "./pages/singleCourse/singleCourse"
 import StudentDashboard from './pages/studentDashboard/studentDashboard';
 import ViewProfile from "./pages/profile/viewProfile"
 import AccountSettings from "./pages/profile/accountSettings"
+import OngoingCourse from "./pages/ongoingCourses/ongoingCourse"
 
 import {
   Switch, 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/single-course-page" exact component={SingleCourse} />
         <Route path="/profile" exact component={ViewProfile} />
         <Route path="/account" exact component={AccountSettings} />
+        <Route path="/my-courses" exact component={OngoingCourse} />
         <Route path="/" component={Landing} />
       </Switch>
     </div>

@@ -57,7 +57,6 @@
     color: #FFFFFF;
 }
 .alink1, .alink2{
-    width: 140px;
     padding: 15px 40px;
     font-size: 18.6667px;
     color: #FFFFFF;
@@ -86,6 +85,9 @@
 
 .mainImage{
     width: 455px;
+}
+.mainImage2{
+    display: none;
 }
 .play{
     position: absolute ;
@@ -335,6 +337,7 @@
     bottom: 25px;
     left: 292px;
 }
+
 @media screen and (max-width: 952px){
     .headerContent{
         flex-direction: column-reverse;
@@ -366,8 +369,29 @@
         display: inline-block;
     }
     .preview{
+        flex-basis: unset;
+        position: relative;
+        height: 582px;
+        margin-top: 0px;
+        padding-top: 0px;
+        border-radius: 0px;
+        overflow-x: hidden;
+    }
+    .mainImage{
+        display: none;
+    }
+    .mainImage2{
+        display: block;
+        object-fit: cover;
+        object-position: top;
+        width: 120%;
         height: 100%;
-        width: 100%;
+    }
+    .play{
+        top: 25%;
+    }
+    .preview p{
+        top: 25%;
     }
     .tobi{
         width: 80%;
@@ -389,7 +413,6 @@
     }
     .alink1{
        background-color: #301446;
-       width: 140px;
        padding: 10px 25px;
        border: 1.16667px solid #301446;
     }
@@ -397,7 +420,6 @@
         background-color: #301446;
     }
     .alink2{
-        width: 140px;
         padding: 10px 25px;
         width: 140px;
         color: #301446;
@@ -408,19 +430,12 @@
         opacity: 1;
         cursor: pointer;
     }
-    .mainImage{
-        height: 100%;
-        width: 100%;
-    }
     .ul{
         flex-direction: column;
         border-bottom: none;
     }
     .ul div{
         border: none;
-    }
-    .Pc{
-        display: none;
     }
     .reqMob{
         cursor: pointer;
@@ -434,7 +449,7 @@
     padding-top: 50px;
 }
 .outline li{
-    justify-content: space-between;
+    justify-content: center;
     gap: 13px;
 }
 .ouline span{
@@ -444,12 +459,62 @@
     display: none;
 }
 .rightContent{
+    display: flex;
     flex-direction: column;
     align-items: center; 
+    gap: 20px;
 }
 .allContent{
+    padding: 30px 0;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    border-bottom: none;
+}
+.pages{
+    font-size: 15.0957px;
+}
+.spacing{
+    flex-direction: column;
+}
+.divSpans{
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+}
+@media screen and (max-width: 812px){
+    .preview{
+        height: 512px;
+    }
+    .mainImage2{
+        width: 130%;
+    }
+    }
+@media screen and (max-width: 572px){
+    .preview{
+        height: 440px;
+    }
+    .mainImage2{
+        width: 150%;
+    }
+}
+@media screen and (max-width: 492px){
+    .textareaBox textarea{
+        width: 100%;
+    }
+    .textareaBox span{
+        left: 57%;
+    }
+    .preview{
+        height:380px;
+    }
+    .mainImage2{
+        width: 170%;
+    }
+}
+@media screen and (max-width: 370px){
+.alinks{
+    display: flex;
 }
 
 }
