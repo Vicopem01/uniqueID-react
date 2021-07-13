@@ -30,7 +30,7 @@ const AllCourse = () => {
             Relax ,Learn
             <br /> And be Creative
           </h1>
-          <p>
+          <p className={classes.headerP}>
             Nec ultrices est auctor arcu eget neque. Ultrices at
             <br />
             pulvinar elementum, convallis nisl, aenean ornare.

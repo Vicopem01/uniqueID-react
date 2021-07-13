@@ -4,7 +4,6 @@
     align-items: center
 }
 .header2{
-    /* padding-top: 15px; */
     width: 90%;
     margin: auto;
     display: flex;
@@ -262,7 +261,6 @@
         padding-top: 10px;
     }
     .topDiv{
-        /* text-align: left; */
         width: 73%;
         margin: auto;
     }

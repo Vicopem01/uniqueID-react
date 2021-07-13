@@ -61,7 +61,9 @@
 .hiddenMenu{
     display: none;
 }
-
+/* .pHidden{
+    color:#333333;
+} */
 @media screen and (max-width: 760px){
     .header{
         background-color: #fff;
@@ -109,6 +111,7 @@
     margin: auto;
     font-weight: 700;
     padding: 25px 0px 0px 0px;
+    color: #333333;
 }
 
 .ul3 li, .ul4{
@@ -141,10 +144,5 @@
 .ul4 li:last-child{
     padding-bottom: 60px;
 }
-.ul3 li a:hover, .ul4 li:hover{
-    font-weight: 700;
-    font-size: 20px;
-}
-
 
 }

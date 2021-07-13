@@ -12,7 +12,6 @@
 .container{
     margin: 108px auto;
     width: 45.4%;
-    /* height: 944px; */
     background: #FFFFFF;
     border: 1px solid #E8E6F2;
     box-sizing: border-box;
@@ -114,11 +113,16 @@
         width: 80%;
         margin: 80px auto;
     }
+    .signin, .signup{
+        font-size: 14px;
+    }
     .container h2{
         padding-top: 80px;
+        font-size: 34px;
     }
     .p{
         padding-bottom: 45px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 530px){

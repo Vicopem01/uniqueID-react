@@ -40,7 +40,7 @@ const Header1= ()=>{
                     <li><Link to="/sign-in">Sign Up</Link></li>
                     <li><Link to="/sign-in">Log in</Link></li>
                 </ul>
-                <p>Course</p>
+                <p className={classes.pHidden}>Course</p>
                 <ul className={classes.ul4}>
                     <li>Artficial Intelligence <img src={ForwardArrow} alt=""/></li>
                     <li>Branding <img src={ForwardArrow} alt=""/></li>

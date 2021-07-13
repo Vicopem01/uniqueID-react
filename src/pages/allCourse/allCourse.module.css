@@ -17,7 +17,7 @@
     padding-top: 79px;
     padding-bottom: 21px;
 }
-.header p{
+.headerP{
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
@@ -133,7 +133,7 @@
         padding-top: 50px;
         padding-bottom: 8px;
     }
-    .header p{
+    .headerP{
         padding-bottom: 29px;
         font-size: 14px;
     }
