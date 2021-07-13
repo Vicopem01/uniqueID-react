@@ -1,5 +1,6 @@
 import classes from "./studentDashboard.module.css"
 import Header2 from "../header/header2/header2"
+import { Link } from "react-router-dom";
 import Cards from "./courseCards"
 import Forward from "./images/forward.svg"
 import Footer from "../footer/footer2"
@@ -11,6 +12,11 @@ import EyeClear from "./images/eyeclear.svg"
 import Partners from "../landing/components/partners/partners"
 
 const StudentDashboard =()=>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      });
+    
     return(
         <div>
             <div className={classes.headerDiv}>
