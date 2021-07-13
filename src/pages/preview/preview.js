@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Header from "../header/header1/header1";
 import Footer from "../footer/footer";
 import classes from "./preview.module.css";
 import Stars from "../preview/images/star.svg";
 import Share from "../preview/images/share.svg";
+import SharePurple from "../preview/images/share-purple.svg";
 import Avatar from "../preview/images/avatar.svg";
 import Man from "../preview/images/man-video.svg";
 import Play from "../preview/images/play.svg";
@@ -12,35 +14,41 @@ import Check from "../preview/images/check.svg";
 import Circle from "../preview/images/circle.svg";
 import Plus from "../preview/images/plus.svg";
 import Stars3 from "../preview/images/3stars.svg";
+import DropdownArrow from "./images/dropdown-arrow.svg"
+import Dropdown2 from "./images/dropdown2.svg"
 
 
 const Preview =()=>{
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      });
-    
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //   });
+
+    const [isActive, setIsActive] = useState(false);
+
     return(
         <div>
             <div style={{background: "#301446"}}>
             <Header />
             <div className={classes.headerContent}>
-                <div>
+                <div className={classes.mainHead}>
                 <h1>Branding : Introduction to Personal Branding</h1>
                 <p>Begin your Career as a Branding Specialist. 
                 Master branding strategies, branded content
                  generation, image creation and customer experience</p>
                  <div className={classes.starBox}>
                      <img src={Stars} alt="Stars"/> <span>4.0</span>
-                     <img src={Share} alt="Share"/> <span>Share</span>
+                     <img src={Share} alt="Share"/> 
+                     <img src={SharePurple} alt="" className={classes.sharePurple}/>
+                     <span>Share</span>
                  </div>
                 <div  className={classes.tobi}>
                     <img src={Avatar} alt="Avatar"/> <span>Ogungbemi Tobi</span>
                 </div>
                 <div className={classes.price}>
                     <span>$50</span>
-                    <del>100</del>
+                    <del>$100</del>
                 </div>
-                <div>
+                <div className={classes.alinks}>
                     <Link to="/sign-up" className={classes.alink1}>Buy Now</Link>
                     <a className={classes.alink2}>Add to cart</a>
                 </div>
@@ -72,12 +80,27 @@ const Preview =()=>{
                 </ul>
                 </div>
             </section>
+
+
+
+
             <section className={classes.requirement}>
-                <h3>REQIUREMENT</h3>
+
+                <h3 className={classes.Pc}>REQUIREMENT</h3>
+                <ul className={classes.Pc}>
+                    <li>Nothing but motivate yourself</li>
+                    <li>Good internet connection</li>
+                </ul>
+                <h3 onClick={()=>setIsActive(!isActive)} className={classes.reqMob}>
+                    REQUIREMENT
+                 <img src={DropdownArrow} alt=""/></h3>
+
+                {isActive && <div className="accordion-content">
                 <ul>
                     <li>Nothing but motivate yourself</li>
                     <li>Good internet connection</li>
                 </ul>
+                </div>}
                 <h3>DESCRIPTION</h3>
                 <p>This Specialization aims to make branding concepts accessible
                      to every learner and to teach them to analyze and apply all
@@ -91,22 +114,23 @@ const Preview =()=>{
                          makes it hard for brands to break through that
                           noise. It ends up teaching how to understand branding
                            efforts in the context of customer experience.</p>
+                           <p>Show more</p>
             </section>
             <section className={classes.outline}>
                 <h3>COURSE OUTLINE </h3>
             <ul>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span  className={classes.remove}>01:03:52</span></li>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span className={classes.remove}>01:03:52</span></li>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span className={classes.remove}>01:03:52</span></li>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span className={classes.remove}>01:03:52</span></li>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span className={classes.remove}>01:03:52</span></li>
                 <li><img src={Plus} alt=" "/><span>Introduction & Class #1: Launching a New Company
-                    </span><span>11 lectures</span><span>01:03:52</span></li>
+                    </span><span className={classes.remove}>11 lectures</span><span className={classes.remove}>01:03:52</span></li>
             </ul>
                 </section>
             <section className={classes.feedback}>
@@ -185,7 +209,7 @@ const Preview =()=>{
                     </div>
                     <p>2 weeks ago <br/>Jessy Ndendzi</p>
                 </div>
-                <div className={classes.righContent}>
+                <div className={classes.rightContent}>
                 <img src={Stars3} alt=""/>
                 <p>Very insightful course. It helps to
                     have a better understanding of key

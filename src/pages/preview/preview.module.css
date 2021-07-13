@@ -23,6 +23,9 @@
     width: 160px;
     margin-bottom: 25px;
 }
+.sharePurple{
+    display: none;
+}
 .starBox span{
     font-weight: 600;
     font-size: 14px;
@@ -59,7 +62,6 @@
     font-size: 18.6667px;
     color: #FFFFFF;
     border-radius: 5.83333px;  
-    /* margin-top: 7px;   */
 }
 .alink1{
     background-color:#751D52;
@@ -86,7 +88,6 @@
     width: 455px;
 }
 .play{
-    /* opacity: 0; */
     position: absolute ;
     top: 45%;
     left: 50%;
@@ -118,11 +119,9 @@
     gap: 20%;
     padding-bottom: 65px;
     border-bottom: 1px solid #000000;
-
 }
 .ul div{
     border: 0.755995px solid #000000;
-    /* transform: rotate(-90deg); */
 }
 .ul1{
     list-style-type: none;
@@ -178,6 +177,9 @@
 .outline{
     width: 85%;
     margin:auto;
+}
+.reqMob{
+    display: none;
 }
 .outline h3{
     padding-top: 84.5px;
@@ -332,4 +334,122 @@
     border-radius: 5px;
     bottom: 25px;
     left: 292px;
+}
+@media screen and (max-width: 952px){
+    .headerContent{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .mainHead{
+        width: 100%;
+        background-color: #fff;
+    }
+    .mainHead h1, .mainHead p, .starbox span{
+        color: #301446;
+    }
+    .mainHead h1{
+        width: 80%;
+        margin: auto;
+        font-size: 24px;
+    }
+    .mainHead p{
+        width: 80%;
+        margin: auto;
+        font-size: 14px;
+    }
+    .starBox{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .sharePurple{
+        display: inline-block;
+    }
+    .preview{
+        height: 100%;
+        width: 100%;
+    }
+    .tobi{
+        width: 80%;
+        margin: auto;
+    }
+    .tobi span{
+        color: #301446;
+    }
+    .price{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .price span, .price del{
+        color: #021C37;
+    }
+    .alinks{
+        width: 80%;
+        margin: auto;
+    }
+    .alink1{
+       background-color: #301446;
+       width: 140px;
+       padding: 10px 25px;
+       border: 1.16667px solid #301446;
+    }
+    .alink2:hover{
+        background-color: #301446;
+    }
+    .alink2{
+        width: 140px;
+        padding: 10px 25px;
+        width: 140px;
+        color: #301446;
+        border: 1.16667px solid #301446;
+    }
+    .alink1:hover, .alink2:hover{
+        background-color:#301446;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .mainImage{
+        height: 100%;
+        width: 100%;
+    }
+    .ul{
+        flex-direction: column;
+        border-bottom: none;
+    }
+    .ul div{
+        border: none;
+    }
+    .Pc{
+        display: none;
+    }
+    .reqMob{
+        cursor: pointer;
+        display: flex;
+        gap: 20px;
+    }
+    .ul{
+        padding-bottom: 0px;
+    }
+.requirement h3{
+    padding-top: 50px;
+}
+.outline li{
+    justify-content: space-between;
+    gap: 13px;
+}
+.ouline span{
+    font-size: 14px;
+}
+.remove, .star4, .bigText, .starReview, .reviewBox{
+    display: none;
+}
+.rightContent{
+    flex-direction: column;
+    align-items: center; 
+}
+.allContent{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 }

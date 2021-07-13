@@ -154,7 +154,7 @@
 }
 @media (max-width: 825px){
     .main{
-        height: 70vh;
+        height: auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url("./images/bg-mobile.svg");
         background-size: cover, 122%;
@@ -168,6 +168,7 @@
     .main p{
         width: 90%;
         padding-left: 26px;
+        padding-bottom: 187px;
     }
     .mainCard{
         display: grid;
