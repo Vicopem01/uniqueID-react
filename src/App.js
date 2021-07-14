@@ -66,7 +66,6 @@ const App=()=> {
 const [show, setShow] = useState(true);
 
   return (
-    // <LoaderContext.Provider value={{show, setShow}}>
       <Suspense fallback={<Loader />}>
     <div>
       <Switch>
@@ -85,7 +84,6 @@ const [show, setShow] = useState(true);
       </Switch>
     </div>
     </Suspense>
-    //  </LoaderContext.Provider> 
   );
 }
 
