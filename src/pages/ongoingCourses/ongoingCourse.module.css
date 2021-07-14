@@ -12,7 +12,7 @@
     width: 100%;
     height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url("../studentDashboard/images/bg.svg");
+      url("../studentDashboard/images/bg.webp");
     background-repeat: no-repeat;
     background-size: cover, 120%;
   }

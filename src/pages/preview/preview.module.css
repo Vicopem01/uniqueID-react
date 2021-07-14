@@ -76,6 +76,7 @@
     background-color:#751D52;
     opacity: 1;
     cursor: pointer;
+    color: #fff;
 }
 .preview{
     flex-basis: 30%;

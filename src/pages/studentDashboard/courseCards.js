@@ -1,5 +1,5 @@
 import classes from "./studentDashboard.module.css"
-import Image from "./images/img.svg"
+import Image from "./images/img.webp"
 
 
 const Cards=()=>{

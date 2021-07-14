@@ -5,7 +5,7 @@ import Footer from "../footer/footer";
 import { Link } from "react-router-dom";
 import BrowseCardsResponsive from "../landing/components/browseCourses/browsecardsResponsive";
 import Image1 from "../allCourse/images/image1.svg";
-import Image2 from "../allCourse/images/image2.svg";
+import Image2 from "../allCourse/images/image2.webp";
 import Image3 from "../allCourse/images/image3.svg";
 import EyeBlur from "../allCourse/images/eye-blur.svg";
 // import Eyeclear from "../allCourse/images/eye-clear.svg";
