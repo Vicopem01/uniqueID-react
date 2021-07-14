@@ -3,10 +3,16 @@ import Logo from "./images/logo-light.svg";
 import classes from "./signin.module.css";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
+  console.log(props)
+
+  const goToDashboard =() =>{
+    props.history.push("/dashboard")
+  }
 
   return (
     <div>
@@ -30,7 +36,7 @@ const Login = () => {
           <br />
           Education to future-proof your career
         </p>
-        <form className={classes.form}>
+        <form className={classes.form} onSubmit={goToDashboard}>
           <input
             type="email"
             placeholder="Email address"
@@ -43,7 +49,7 @@ const Login = () => {
             required
             className={classes.password3}
           />
-          <Link to="/dashboard" className={classes.button}>SIGN IN</Link>
+          <button type="submit" className={classes.button}>SIGN IN</button>
         </form>
       </div>
     </div>

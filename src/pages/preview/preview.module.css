@@ -183,7 +183,7 @@
     width: 85%;
     margin:auto;
 }
-.reqMob{
+.reqMob, .remove2, .showMore{
     display: none;
 }
 .outline h3{
@@ -441,18 +441,7 @@
     .ul div{
         border: none;
     }
-    .reqMob{
-        cursor: pointer;
-        display: flex;
-        gap: 20px;
-    }
-    .showMore{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: #751D52;
-        cursor: pointer;
-    }
+    
     .ul{
         padding-bottom: 0px;
     }
@@ -469,7 +458,7 @@
 .ouline span{
     font-size: 14px;
 }
-.remove, .star4, .bigText, .starReview, .reviewBox{
+.star4, .bigText, .starReview, .reviewBox{
     display: none;
 }
 .rightContent{
@@ -500,12 +489,30 @@
     .preview{
         height: 512px;
     }
-    
+    .showMore{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #751D52;
+        cursor: pointer;
+    }
+    .remove{
+        display: none;
+    }
+    .reqMob{
+        cursor: pointer;
+        display: flex;
+        gap: 20px;
+    }
+    .remove2{
+        display: block;
+    }
     }
 @media screen and (max-width: 572px){
     .preview{
         height: 440px;
     }
+
     
 }
 @media screen and (max-width: 492px){

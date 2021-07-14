@@ -80,6 +80,9 @@
         width: 166.53px;
         height: 234.71px;
     }
+    .hiddenP{
+        display: none;
+    }
     .mainImage{
         max-width: 100%;
     height: auto;

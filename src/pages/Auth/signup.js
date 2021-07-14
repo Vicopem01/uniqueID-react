@@ -3,10 +3,15 @@ import Logo from "./images/logo-light.svg";
 import classes from "./signup.module.css";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
+  const goToDashboard = ()=>{
+    props.history.push("/dashboard")
+  }
+
 
   return (
     <div>
@@ -28,7 +33,7 @@ const Login = () => {
             <br />
             Education to future-proof your career
           </p>
-          <form className={classes.form}>
+          <form className={classes.form} onSubmit={goToDashboard}>
             <input
               type="text"
               placeholder="First Name"
@@ -44,6 +49,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="Email address"
+              required
               className={classes.mail}
             />
             <input
@@ -62,7 +68,7 @@ const Login = () => {
               By clicking Sign Up, you agree to our <a>Terms of Use</a> and our{" "}
               <a>Privacy Policy.</a>
             </p>
-            <Link to="/dashboard" className={classes.button}>SIGN UP</Link>
+            <button type="submit" className={classes.button}>SIGN UP</button>
           </form>
         </div>
       </div>
