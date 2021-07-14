@@ -25,14 +25,13 @@
     background-color: white;
     position: absolute;
     top: 45px;
-    left: 55%;
+    left: 58%;
     padding-top: 10px;
     overflow-y: auto;
-}
-.ul5{
     list-style: none;
     flex-direction: column;
     justify-content: center;
+    z-index: 10;
 }
 .ul5 li{
     font-weight: 600;
@@ -61,9 +60,42 @@
 .hiddenMenu{
     display: none;
 }
-/* .pHidden{
-    color:#333333;
-} */
+
+@media screen and (max-width: 1512px){
+    .ul5{
+        left: 55%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .ul5{
+        left: 50%;
+    }
+}
+@media screen and (max-width: 1250px){
+    .ul5{
+        left: 45%;
+    }
+}
+@media screen and (max-width: 1135px){
+    .ul5{
+        left: 40%;
+    }
+}
+@media screen and (max-width: 1030px){
+    .ul5{
+        left: 32%;
+    }
+}
+@media screen and (max-width: 920px){
+    .ul5{
+        left: 22%;
+    }
+}
+@media screen and (max-width: 800px){
+    .ul5{
+        left: 15%;
+    }
+}
 @media screen and (max-width: 760px){
     .header{
         background-color: #fff;
