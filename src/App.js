@@ -1,24 +1,73 @@
-import './App.css';
-import Landing from "./pages/landing/landing"
-import Signin from "./pages/Auth/signin"
-import Signup from "./pages/Auth/signup"
-import AboutUs from "./pages/AboutUs/aboutus"
-import AllCourse from "./pages/allCourse/allCourse"
-import Preview from './pages/preview/preview'
-import StudentDashboard from './pages/studentDashboard/studentDashboard';
-import ViewProfile from "./pages/profile/viewProfile"
-import AccountSettings from "./pages/profile/accountSettings"
-import OngoingCourse from "./pages/ongoingCourses/ongoingCourse"
-import Error404 from "./pages/404/error404"
 import {
   Switch, 
   Route,
-} from "react-router-dom"
+} from "react-router-dom";
+import { lazy, Suspense, useState } from "react";
+import './App.css';
+// import Landing from "./pages/landing/landing";
+// import Signin from "./pages/Auth/signin";
+// import Signup from "./pages/Auth/signup";
+// import AboutUs from "./pages/AboutUs/aboutus";
+// import AllCourse from "./pages/allCourse/allCourse";
+// import Preview from './pages/preview/preview';
+// import StudentDashboard from './pages/studentDashboard/studentDashboard';
+// import ViewProfile from "./pages/profile/viewProfile";
+// import AccountSettings from "./pages/profile/accountSettings";
+// import OngoingCourse from "./pages/ongoingCourses/ongoingCourse";
+import Error404 from "./pages/404/error404";
+import Loader from "./pages/loader/loader";
 
+// const Signin = lazy(()=>{
+//   return import("./pages/Auth/signin");
+// });
 
+const Landing = lazy(()=>{
+  return import("./pages/landing/landing");
+});
 
-function App() {
+const Signin = lazy(()=>{
+  return import("./pages/Auth/signin");
+});
+
+const Signup = lazy(()=>{
+  return import("./pages/Auth/signup");
+});
+
+const AboutUs = lazy(()=>{
+  return import("./pages/AboutUs/aboutus");
+});
+
+const AllCourse = lazy(()=>{
+  return import("./pages/allCourse/allCourse");
+});
+
+const Preview = lazy(()=>{
+  return import("./pages/preview/preview");
+});
+
+const StudentDashboard = lazy(()=>{
+  return import("./pages/studentDashboard/studentDashboard");
+});
+
+const ViewProfile = lazy(()=>{
+  return import("./pages/profile/viewProfile");
+});
+
+const AccountSettings = lazy(()=>{
+  return import("./pages/profile/accountSettings");
+});
+
+const OngoingCourse = lazy(()=>{
+  return import("./pages/ongoingCourses/ongoingCourse");
+});
+
+const App=()=> {
+
+const [show, setShow] = useState(true);
+
   return (
+    // <LoaderContext.Provider value={{show, setShow}}>
+      <Suspense fallback={<Loader />}>
     <div>
       <Switch>
         <Route path="/sign-up" exact component={Signup} />
@@ -35,6 +84,8 @@ function App() {
 
       </Switch>
     </div>
+    </Suspense>
+    //  </LoaderContext.Provider> 
   );
 }
 

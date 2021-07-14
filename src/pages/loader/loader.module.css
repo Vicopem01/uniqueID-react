@@ -1,0 +1,39 @@
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+@keyframes ldio-vcj9ugthvyc {
+  0% { background: #e10000 }
+  8.333333333333334% { background: #e10000 }
+  8.416666666666666% { background: #301446 }
+  100% { background: #301446 }
+}
+.ldio_vcj9ugthvyc div {
+  position: absolute;
+  width: 41.4px;
+  height: 41.4px;
+  background: #301446;
+  animation: ldio-vcj9ugthvyc 1s linear infinite;
+}
+.loadingio_spinner_blocks_ifg409xx5wi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  width: 207px;
+  height: 207px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f1f2f3;
+}
+.ldio_vcj9ugthvyc {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio_vcj9ugthvyc div { box-sizing: content-box; }
