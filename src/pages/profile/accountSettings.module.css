@@ -1,161 +1,172 @@
-.mainBox{
-    width: 90%;
-    margin: auto auto 167px auto;
-    display: flex;
-    padding-top: 90px;
-    gap: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+.mainBox {
+  width: 90%;
+  margin: auto auto 167px auto;
+  display: flex;
+  padding-top: 90px;
+  gap: 20px;
 }
-.mainBox aside{
-    flex-basis: 20%;
+.mainBox aside {
+  flex-basis: 20%;
 }
-.mainBox aside h2{
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-    padding: 10px 20px; 
-    border-bottom: 1px solid #000000;
-    margin-bottom: 24px;
-    width: 222px;
-    margin-left: 10px;
+.mainBox aside h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 24px;
+  width: 222px;
+  margin-left: 10px;
 }
-.mainBox ul{
-    list-style: none;
+.mainBox ul {
+  list-style: none;
 }
-.profileLink{
-    font-weight: 600;
-    font-size: 18px;
-    color: #301446;
-    padding: 10px 20px; 
+.profileLink {
+  font-weight: 600;
+  font-size: 18px;
+  color: #301446;
+  padding: 10px 20px;
 }
-.mainBox ul li{
-    margin-bottom: 10px;
-    
+.mainBox ul li {
+  margin-bottom: 10px;
 }
-.mainBox aside li:nth-of-type(2){
-    color: #fff;
-    background: #301446;
-    border-radius: 5px;
+.mainBox aside li:nth-of-type(2) {
+  color: #fff;
+  background: #301446;
+  border-radius: 5px;
 }
-.profileDiv{
-    width: 70%;
-    background: #fff;
-    border: 1px solid #9E9E9E;
+.profileDiv {
+  width: 70%;
+  background: #fff;
+  border: 1px solid #9e9e9e;
 }
-.profileDiv h3{
-    font-weight: bold;
-    font-size: 24px;
-    color: #301446;
-    padding: 30px;
-    border-bottom:  1px solid #C4C4C4;
+.profileDiv h3 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #301446;
+  padding: 30px;
+  border-bottom: 1px solid #c4c4c4;
 }
-.profileDiv label{
-    font-weight: 600;
-    font-size: 18px;
-    display: inline-block;
-    padding: 20px;
-    color: #000000;
-    margin-left: 15px;
+.profileDiv label {
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  padding: 20px;
+  color: #000000;
+  margin-left: 15px;
 }
-.formDiv{
-    width: 80%;
-    margin-left: 35px;
-    margin-bottom: 18px;
-    position: relative;
+.formDiv {
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 18px;
+  position: relative;
 }
-.formDiv input{
+.formDiv input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+}
+.formDiv span {
+  background: #c4c4c4;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 0px 5px 5px 0px;
+  padding: 7px;
+  position: absolute;
+  right: 0px;
+}
+.inputField {
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+}
+.inputField1 {
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 18px;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+}
+.inputField1::placeholder {
+    font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+}
+.profileDiv form p {
+  font-size: 11.5px;
+  color: #333333;
+  margin-left: 36px;
+  margin-bottom: 28px;
+  margin-top: -11px;
+}
+
+.profileDiv form button {
+  font-size: 16px;
+  color: #fffcfc;
+  background: #301446;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  padding: 15px 60px;
+  border-radius: 5px;
+  margin-left: 35px;
+  margin-bottom: 246px;
+  border: none;
+}
+.profileDiv form button:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 700px) {
+  .mainBox {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .mainBox ul {
+    display: none;
+  }
+  .profileDiv {
     width: 100%;
-    padding: 20px;
-    border: 1px solid #C4C4C4;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333333;
-}
-.formDiv span{
-    background: #C4C4C4;
-    border: 0.5px solid #C4C4C4;
-    border-radius: 0px 5px 5px 0px;
-    padding: 7px;
-    position: absolute;
-    right: 0px;
-}
-.inputField{
-    width: 80%;
-    margin-left: 35px;
-    margin-bottom: 18px;
-    padding: 20px;
-    border: 1px solid #C4C4C4;
-    border-radius: 5px;
-    font-size: 12px;
-    color: #333333;
-}
-
-.profileDiv form p{
-    font-size: 11.5px;
-    color: #333333;
-    margin-left: 36px;
-    margin-bottom: 28px;
-    margin-top: -11px;
-}
-
-.profileDiv form button{
-    font-size: 16px;
-    color: #FFFCFC;
-    background: #301446;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    padding: 15px 60px;
-    border-radius: 5px;
-    margin-left: 35px;
-    margin-bottom: 246px;
-    border: none;
-
-}
-.profileDiv form button:hover{
-    opacity: 0.8;
-}
-
-@media only screen and (max-width: 700px){
-    .mainBox{
-        flex-direction: column;
-        padding-top: 40px;
-    }
-    .mainBox ul{
-        display:none;
-    }
-    .profileDiv{
-        width: 100%;
-    }
-    .profileDiv h3{
-        font-size: 18px;
-        padding: 25px 30px;
-
-    }
-    .profileDiv form{
-        margin-top: 35px;
-    }
-    .profileDiv label{
-        font-size: 15px;
-        padding: 10px 20px;
-    }
-    .formDiv{
-        margin-bottom: 0px;
-    }
-    .formDiv input{
-        padding: 15px;
-        font-size: 13px;
-
-    }
-    .formDiv span{
-        height: 48px;
-    }
-    .inputField{
-        padding: 15px;
-        font-size: 13px;
-    }
-    .mainBox{
-        margin: auto auto 55px auto;
-    }
-    .profileDiv form button{
-        margin-bottom: 140px;
-    
-    }
+  }
+  .profileDiv h3 {
+    font-size: 18px;
+    padding: 25px 30px;
+  }
+  .profileDiv form {
+    margin-top: 35px;
+  }
+  .profileDiv label {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .formDiv {
+    margin-bottom: 0px;
+  }
+  .formDiv input {
+    padding: 15px;
+    font-size: 13px;
+  }
+  .formDiv span {
+    height: 48px;
+  }
+  .inputField {
+    padding: 15px;
+    font-size: 13px;
+  }
+  .mainBox {
+    margin: auto auto 55px auto;
+  }
+  .profileDiv form button {
+    margin-bottom: 140px;
+  }
 }
