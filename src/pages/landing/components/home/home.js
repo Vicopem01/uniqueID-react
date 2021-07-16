@@ -1,7 +1,7 @@
 import Header1 from "../../../header/header1/header1";
 import classes from "./home.module.css"
 import Search from "../../images/search-icon.svg"
-import Man from '../../images/man-reading.png'
+import Man from '../../images/man-reading.webp'
 
 
 const Home = ()=>{

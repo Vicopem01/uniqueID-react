@@ -1,6 +1,6 @@
 import classes from "./students.module.css";
 import Person1 from "../../images/person1.svg";
-import Person2 from "../../images/person2.svg";
+import Person2 from "../../images/person2.webp";
 import Person3 from "../../images/person3.svg";
 import Studentarrow from "../../images/student-arrow.svg"
 
