@@ -156,7 +156,7 @@
     .main{
         height: auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("./images/bg-mobile.svg");
+        url("./images/bg-mobile.webp");
         background-size: cover, 122%;
         background-position: right center;
     }
