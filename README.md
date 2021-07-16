@@ -1,4 +1,4 @@
-# Unique ID onine srudy website
+# Unique ID onine study website
 This project is one of the best projecrs I've worked on and I enjoyed every bit of it.
 
 ## I was given a figma design to work alongside 
